@@ -6,6 +6,7 @@ class Likes {
   constructor(el) {
     this.el = document.querySelector(el)
     this.parent = this.el.parentElement
+    this.starLen = 6
     this.init()
   }
 
@@ -44,16 +45,10 @@ class Likes {
   }
 
   add() {
-    const star1 = document.createElement('i')
-    const star2 = document.createElement('i')
-    const star3 = document.createElement('i')
-    const star4 = document.createElement('i')
-
-    const domArr = [star1, star2, star3, star4]
     const classArr = ['icon-xing', 'icon-xin', 'icon-yue']
 
-    for (let i = 0; i < domArr.length; i++) {
-      const dom = domArr[i]
+    for (let i = 0; i < this.starLen; i++) {
+      const dom = document.createElement('i')
       const className = this.random(classArr)
       dom.classList.add('icon', className)
       this.parent.appendChild(dom).focus()
