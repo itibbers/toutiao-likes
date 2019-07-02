@@ -1,0 +1,64 @@
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-wrap {
+  position: relative;
+}
+
+#btn {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Arial;
+  line-height: 2em;
+  padding: 0 1.5em;
+  background: #D11;
+  color: #FFF;
+  border-radius: .5em;
+  box-shadow: 0 6px 0 #A33, 0 1px 0 #A33, 0 0 10px rgba(0, 0, 0, .1) inset, 0 0 15px rgba(0, 0, 0, .1);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+  transition: .3s ease;
+  outline: none;
+}
+
+#btn:active {
+  box-shadow: 0 2px 0 #A33, 0 0 10px rgba(0, 0, 0, .2) inset, 0 0 35px rgba(0, 0, 0, .2);
+  -webkit-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  // background-color: red;
+  background-size: contain;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.icon-xing {
+  background-image: url('./images/xing.png');
+}
+
+.icon-yue {
+  background-image: url('./images/yue.png');
+}
+
+.icon-xin {
+  background-image: url('./images/xin.png');
+}
